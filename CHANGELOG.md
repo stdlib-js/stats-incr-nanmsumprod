@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-07-12)
+## Unreleased (2026-07-24)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`afc9d5b`](https://github.com/stdlib-js/stdlib/commit/afc9d5b13a67ea694d225c5115d6ac3f1772caa7) - **docs:** clean-up [(#13435)](https://github.com/stdlib-js/stdlib/pull/13435) _(by Philipp Burckhardt)_
 -   [`1edad6d`](https://github.com/stdlib-js/stdlib/commit/1edad6d74de5a89df7b7833bb0414b462d7f1256) - **feat:** add `stats/incr/nanmsumprod` [(#6098)](https://github.com/stdlib-js/stdlib/pull/6098) _(by Girish Garg, Philipp Burckhardt, stdlib-bot)_
 
 </details>
