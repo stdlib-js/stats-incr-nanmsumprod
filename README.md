@@ -63,7 +63,7 @@ s = \sum_{i=0}^{W-1} x_i y_i
 ## Usage
 
 ```javascript
-import incrnanmsumprod from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nanmsumprod@esm/index.mjs';
+import incrnanmsumprod from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nanmsumprod@v0.0.0-esm/index.mjs';
 ```
 
 #### incrnanmsumprod( window )
@@ -139,7 +139,7 @@ sum = accumulator();
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import incrnanmsumprod from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nanmsumprod@esm/index.mjs';
+import incrnanmsumprod from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-nanmsumprod@v0.0.0-esm/index.mjs';
 
 // Initialize an accumulator:
 var accumulator = incrnanmsumprod( 5 );
