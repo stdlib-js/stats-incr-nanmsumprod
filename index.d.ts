@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,16 +16,32 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
 /**
-* Compute a moving sum of products incrementally, ignoring `NaN` values.
+* If provided arguments, returns an updated sum of products; otherwise, returns the current sum of products.
 *
-* @module @stdlib/stats-incr-nanmsumprod
+* @param x - value
+* @param y - value
+* @returns sum of products
+*/
+type accumulator = ( x?: number, y?: number ) => number | null;
+
+/**
+* Returns an accumulator function which incrementally computes a moving sum of products, ignoring `NaN` values.
+*
+* ## Notes
+*
+* -   The `W` parameter defines the number of (x,y) pairs over which to compute the moving sum of products.
+* -   As `W` (x,y) pairs are needed to fill the window buffer, the first `W-1` returned values are calculated from smaller sample sizes. Until the window is full, each returned value is calculated from all provided values.
+*
+* @param W - window size
+* @throws must provide a positive integer
+* @returns accumulator function
 *
 * @example
-* var incrnanmsumprod = require( '@stdlib/stats-incr-nanmsumprod' );
-*
 * var accumulator = incrnanmsumprod( 3 );
 *
 * var sum = accumulator();
@@ -55,12 +71,9 @@
 * sum = accumulator();
 * // returns -1.0
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function incrnanmsumprod( W: number ): accumulator;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = incrnanmsumprod;
